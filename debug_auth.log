@@ -93,3 +93,8 @@
 [2025-05-20 13:05:40] Hash password dari DB: $2y$12$sEz6arvvXqfS6RtSKQbUP.0uZ1EOevmssn38rPatWRv3x/7MAu/M.
 [2025-05-20 13:05:40] Password yang dimasukkan: admin123
 [2025-05-20 13:05:41] Hasil verifikasi password: valid
+[2025-05-20 13:55:43] Mencoba login dengan username: admin
+[2025-05-20 13:55:43] User ditemukan, memeriksa password...
+[2025-05-20 13:55:43] Hash password dari DB: $2y$12$sEz6arvvXqfS6RtSKQbUP.0uZ1EOevmssn38rPatWRv3x/7MAu/M.
+[2025-05-20 13:55:43] Password yang dimasukkan: admin123
+[2025-05-20 13:55:43] Hasil verifikasi password: valid

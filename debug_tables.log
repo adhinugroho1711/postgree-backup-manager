@@ -545,3 +545,16 @@
     [is_admin] => 1
 )
 
+[2025-05-20 13:57:34] ====== MULAI DEBUG ======
+[2025-05-20 13:57:34] POST data: Array
+(
+)
+
+[2025-05-20 13:57:34] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
