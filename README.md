@@ -13,6 +13,32 @@ Aplikasi berbasis web untuk melakukan backup dan restore database PostgreSQL den
 - Log aktivitas dan riwayat backup/restore
 - Ekspor/import konfigurasi backup
 
+## Screenshot Aplikasi
+
+### Halaman Login
+![Halaman Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Halaman Backup
+![Halaman Backup](screenshots/backup.png)
+
+### Halaman Restore
+![Halaman Restore](screenshots/restore.png)
+
+### Halaman Manage Backups
+![Halaman Manage Backups](screenshots/manage_backups.png)
+
+### Halaman Audit Log
+![Halaman Audit Log](screenshots/audit_log.png)
+
+### Halaman Users
+![Halaman Users](screenshots/users.png)
+
+### Halaman Settings
+![Halaman Settings](screenshots/settings.png)
+
 ## Persyaratan Sistem
 
 - PHP 7.4 atau lebih baru
