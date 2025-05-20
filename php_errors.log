@@ -1,0 +1,42 @@
+[Tue May 20 09:35:15 2025] PHP 8.4.7 Development Server (http://localhost:8000) started
+[Tue May 20 09:36:53 2025] [::1]:62650 Accepted
+[Tue May 20 09:36:53 2025] [::1]:62650 [302]: HEAD /pages/restore.php
+[Tue May 20 09:36:53 2025] [::1]:62650 Closing
+[Tue May 20 09:48:56 2025] [::1]:56332 Accepted
+[Tue May 20 09:48:58 2025] [::1]:56332 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue May 20 09:48:58 2025] [::1]:56332 Closing
+[Tue May 20 09:49:01 2025] [::1]:56389 Accepted
+[Tue May 20 09:49:01 2025] [::1]:56390 Accepted
+[Tue May 20 09:49:02 2025] [::1]:56389 [200]: GET /
+[Tue May 20 09:49:02 2025] [::1]:56389 Closing
+[Tue May 20 09:49:02 2025] [::1]:56394 Accepted
+[Tue May 20 09:49:02 2025] [::1]:56394 [200]: GET /
+[Tue May 20 09:49:02 2025] [::1]:56394 Closing
+[Tue May 20 09:49:03 2025] [::1]:56390 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue May 20 09:49:03 2025] [::1]:56390 Closing
+[Tue May 20 09:49:04 2025] [::1]:56409 Accepted
+[Tue May 20 09:49:04 2025] [::1]:56420 Accepted
+[Tue May 20 09:49:04 2025] [::1]:56409 [200]: GET /?page=backup
+[Tue May 20 09:49:04 2025] [::1]:56409 Closing
+[Tue May 20 09:49:05 2025] [::1]:56434 Accepted
+[Tue May 20 09:49:05 2025] Mencoba mengakses halaman: /Users/adhinugroho/Documents/backup_postgre/pages/restore.php
+[Tue May 20 09:49:05 2025] File exists: Ya
+[Tue May 20 09:49:06 2025] [::1]:56420 [200]: GET /?page=restore
+[Tue May 20 09:49:06 2025] [::1]:56420 Closing
+[Tue May 20 09:49:08 2025] [::1]:56434 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue May 20 09:49:08 2025] [::1]:56434 Closing
+[Tue May 20 09:49:12 2025] [::1]:56503 Accepted
+[Tue May 20 09:49:13 2025] [::1]:56503 [200]: POST /handlers/get_tables_restore.php
+[Tue May 20 09:49:13 2025] [::1]:56503 Closing
+[Tue May 20 09:49:21 2025] [::1]:56594 Accepted
+[Tue May 20 09:49:21 2025] [::1]:56595 Accepted
+[Tue May 20 09:49:21 2025] Mencoba mengakses halaman: /Users/adhinugroho/Documents/backup_postgre/pages/restore.php
+[Tue May 20 09:49:21 2025] File exists: Ya
+[Tue May 20 09:49:21 2025] Restore ke database: host=localhost, port=5432, dbname=klinik_mata, user=postgres
+[Tue May 20 09:49:21 2025] Menggunakan optimasi performa: 8 core CPU, 1024MB memori tersedia
+[Tue May 20 09:49:21 2025] Restore tabel tertentu: users
+[Tue May 20 09:49:21 2025] Menjalankan perintah restore: gunzip -c '/Users/adhinugroho/Documents/backup_postgre/config/../backups/backup_klinik_20250520_092343.sql.gz' | echo "SET session_replication_role = replica;" | PGPASSWORD="jateng001" psql -h localhost -p 5432 -U postgres -d klinik_mata -v ON_ERROR_STOP=0 && PGPASSWORD="jateng001" psql -h localhost -p 5432 -U postgres -d klinik_mata -v ON_ERROR_STOP=0
+gunzip: error writing to output: Broken pipe
+gunzip: /Users/adhinugroho/Documents/backup_postgre/config/../backups/backup_klinik_20250520_092343.sql.gz: uncompress failed
+
+Fatal error: Maximum execution time of 30+2 seconds exceeded (terminated) in /Users/adhinugroho/Documents/backup_postgre/pages/restore.php on line 163

@@ -1,0 +1,20 @@
+[2025-05-20 11:24:30] Mencoba login dengan username: guest
+[2025-05-20 11:24:30] User ditemukan, memeriksa password...
+[2025-05-20 11:24:30] Hash password dari DB: $2y$12$0f1gTtUGBc1OQfkvvmniYuWID6lAeyhsECxxxGhSv7FG5tFHSJEru
+[2025-05-20 11:24:30] Password yang dimasukkan: guest123
+[2025-05-20 11:24:30] Hasil verifikasi password: tidak valid
+[2025-05-20 11:24:36] Mencoba login dengan username: admin
+[2025-05-20 11:24:36] User ditemukan, memeriksa password...
+[2025-05-20 11:24:36] Hash password dari DB: 0192023a7bbd73250516f069df18b500
+[2025-05-20 11:24:36] Password yang dimasukkan: admin123
+[2025-05-20 11:24:36] Hasil verifikasi password: valid
+[2025-05-20 11:24:56] Mencoba login dengan username: admin
+[2025-05-20 11:24:56] User ditemukan, memeriksa password...
+[2025-05-20 11:24:56] Hash password dari DB: 0192023a7bbd73250516f069df18b500
+[2025-05-20 11:24:56] Password yang dimasukkan: admin123
+[2025-05-20 11:24:56] Hasil verifikasi password: valid
+[2025-05-20 11:26:00] Mencoba login dengan username: admin
+[2025-05-20 11:26:00] User ditemukan, memeriksa password...
+[2025-05-20 11:26:00] Hash password dari DB: 0192023a7bbd73250516f069df18b500
+[2025-05-20 11:26:00] Password yang dimasukkan: admin123
+[2025-05-20 11:26:00] Hasil verifikasi password: valid

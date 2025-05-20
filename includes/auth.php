@@ -1,0 +1,184 @@
+<?php
+// Pastikan session sudah dimulai
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Fungsi untuk logging
+if (!function_exists('log_message')) {
+    function log_message($message) {
+        $log_file = __DIR__ . '/../debug_auth.log';
+        $timestamp = date('Y-m-d H:i:s');
+        file_put_contents($log_file, "[$timestamp] $message\n", FILE_APPEND);
+    }
+}
+
+// Fungsi untuk mengecek apakah user sudah login
+if (!function_exists('is_logged_in')) {
+    function is_logged_in() {
+        return isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
+    }
+}
+
+// Fungsi untuk mengecek apakah user adalah admin
+if (!function_exists('is_admin')) {
+    function is_admin() {
+        return isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true;
+    }
+}
+
+// Fungsi untuk melakukan login
+if (!function_exists('login')) {
+    function login($username, $password) {
+        log_message("Mencoba login dengan username: $username");
+        $pdo = get_db_connection();
+        
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt->execute([$username]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$user) {
+            log_message("User $username tidak ditemukan");
+            return false;
+        }
+        
+        log_message("User ditemukan, memeriksa password...");
+        log_message("Hash password dari DB: " . $user['password']);
+        log_message("Password yang dimasukkan: $password");
+        
+        // Verifikasi password
+        $isValid = password_verify($password, $user['password']);
+        log_message("Hasil verifikasi password: " . ($isValid ? 'valid' : 'tidak valid'));
+        
+        // Jika verifikasi gagal, coba verifikasi dengan MD5 (untuk kompatibilitas ke belakang)
+        if (!$isValid && md5($password) === $user['password']) {
+            $isValid = true;
+            // Update password ke format yang lebih aman
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            $pdo->prepare("UPDATE users SET password = ? WHERE id = ?")
+                ->execute([$hashed_password, $user['id']]);
+        }
+        
+        if ($isValid) {
+            // Set session
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['full_name'] = $user['full_name'];
+            $_SESSION['is_admin'] = (bool)$user['is_admin'];
+            
+            // Update last login
+            $pdo->prepare("UPDATE users SET updated_at = NOW() WHERE id = ?")
+                ->execute([$user['id']]);
+                
+            return true;
+        }
+        
+        return false;
+    }
+}
+
+// Fungsi untuk logout
+if (!function_exists('logout')) {
+    function logout() {
+        // Hapus semua data session
+        $_SESSION = [];
+        
+        // Hapus cookie session
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
+        }
+        
+        // Hancurkan session
+        session_destroy();
+    }
+}
+
+// Fungsi untuk memeriksa izin akses halaman
+if (!function_exists('check_permission')) {
+    function check_permission($require_admin = false) {
+        if (!is_logged_in()) {
+            header('Location: login.php');
+            exit();
+        }
+        
+        if ($require_admin && !is_admin()) {
+            header('Location: index.php');
+            exit();
+        }
+    }
+}
+
+// Fungsi untuk mendapatkan data user yang sedang login
+if (!function_exists('get_current_user')) {
+    function get_current_user() {
+        if (!is_logged_in()) {
+            return null;
+        }
+        
+        $pdo = get_db_connection();
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+        $stmt->execute([$_SESSION['user_id']]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+}
+
+// Fungsi untuk memeriksa CSRF token
+if (!function_exists('check_csrf_token')) {
+    function check_csrf_token() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                die('Invalid CSRF token');
+            }
+        }
+    }
+}
+
+// Generate CSRF token
+if (!function_exists('generate_csrf_token')) {
+    function generate_csrf_token() {
+        if (empty($_SESSION['csrf_token'])) {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+        return $_SESSION['csrf_token'];
+    }
+}
+
+// Fungsi untuk menampilkan pesan flash
+if (!function_exists('set_flash_message')) {
+    function set_flash_message($type, $message) {
+        $_SESSION['flash'] = [
+            'type' => $type,
+            'message' => $message
+        ];
+    }
+}
+
+// Fungsi untuk mendapatkan dan menghapus pesan flash
+if (!function_exists('get_flash_message')) {
+    function get_flash_message() {
+        if (isset($_SESSION['flash'])) {
+            $flash = $_SESSION['flash'];
+            unset($_SESSION['flash']);
+            return $flash;
+        }
+        return null;
+    }
+}
+
+// Fungsi untuk menampilkan pesan error
+if (!function_exists('display_error')) {
+    function display_error($message) {
+        return '<div class="alert alert-danger">' . htmlspecialchars($message) . '</div>';
+    }
+}
+
+// Fungsi untuk menampilkan pesan sukses
+if (!function_exists('display_success')) {
+    function display_success($message) {
+        return '<div class="alert alert-success">' . htmlspecialchars($message) . '</div>';
+    }
+}

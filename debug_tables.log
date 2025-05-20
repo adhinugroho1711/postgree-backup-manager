@@ -1,0 +1,547 @@
+[2025-05-19 20:23:25] ====== MULAI DEBUG ======
+[2025-05-19 20:23:25] POST data: Array
+(
+)
+
+[2025-05-19 20:23:25] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-19 20:23:25] Menggunakan 10 tabel dari session
+[2025-05-20 09:03:51] ====== MULAI DEBUG ======
+[2025-05-20 09:03:51] POST data: Array
+(
+)
+
+[2025-05-20 09:03:51] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:06:24] ====== MULAI DEBUG ======
+[2025-05-20 09:06:24] POST data: Array
+(
+)
+
+[2025-05-20 09:06:24] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:09:21] ====== MULAI DEBUG ======
+[2025-05-20 09:09:21] POST data: Array
+(
+)
+
+[2025-05-20 09:09:21] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:14:18] ====== MULAI DEBUG ======
+[2025-05-20 09:14:18] POST data: Array
+(
+)
+
+[2025-05-20 09:14:18] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 09:14:18] Menggunakan 10 tabel dari session
+[2025-05-20 09:14:30] ====== MULAI DEBUG ======
+[2025-05-20 09:14:30] POST data: Array
+(
+)
+
+[2025-05-20 09:14:30] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:17:47] ====== MULAI DEBUG ======
+[2025-05-20 09:17:47] POST data: Array
+(
+)
+
+[2025-05-20 09:17:47] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:19:04] ====== MULAI DEBUG ======
+[2025-05-20 09:19:04] POST data: Array
+(
+    [backup_name] => test
+    [description] => 
+    [db_host] => localhost
+    [db_port] => 5432
+    [db_user] => postgres
+    [db_pass] => jateng001
+    [database] => klinik_mata
+    [selected_tables] => Array
+        (
+            [0] => users
+        )
+
+    [backup_type] => tables
+    [compress] => on
+    [include_schema] => on
+    [include_data] => on
+)
+
+[2025-05-20 09:19:04] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 09:19:04] Menggunakan 10 tabel dari session
+[2025-05-20 09:23:26] ====== MULAI DEBUG ======
+[2025-05-20 09:23:26] POST data: Array
+(
+)
+
+[2025-05-20 09:23:26] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 09:23:26] Menggunakan 10 tabel dari session
+[2025-05-20 09:49:04] ====== MULAI DEBUG ======
+[2025-05-20 09:49:04] POST data: Array
+(
+)
+
+[2025-05-20 09:49:04] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 09:49:04] Menggunakan 10 tabel dari session
+[2025-05-20 09:54:00] ====== MULAI DEBUG ======
+[2025-05-20 09:54:00] POST data: Array
+(
+)
+
+[2025-05-20 09:54:00] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 09:54:11] ====== MULAI DEBUG ======
+[2025-05-20 09:54:11] POST data: Array
+(
+)
+
+[2025-05-20 09:54:11] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 09:54:11] Menggunakan 10 tabel dari session
+[2025-05-20 10:02:39] ====== MULAI DEBUG ======
+[2025-05-20 10:02:39] POST data: Array
+(
+)
+
+[2025-05-20 10:02:39] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+            [0] => cache
+            [1] => cache_locks
+            [2] => failed_jobs
+            [3] => job_batches
+            [4] => jobs
+            [5] => migrations
+            [6] => password_reset_tokens
+            [7] => patients
+            [8] => sessions
+            [9] => users
+        )
+
+    [selected_db] => klinik_mata
+)
+
+[2025-05-20 10:02:39] Menggunakan 10 tabel dari session
+[2025-05-20 10:05:28] ====== MULAI DEBUG ======
+[2025-05-20 10:05:28] POST data: Array
+(
+)
+
+[2025-05-20 10:05:28] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:16:03] ====== MULAI DEBUG ======
+[2025-05-20 10:16:03] POST data: Array
+(
+)
+
+[2025-05-20 10:16:03] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:18:23] ====== MULAI DEBUG ======
+[2025-05-20 10:18:23] POST data: Array
+(
+)
+
+[2025-05-20 10:18:23] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:20:57] ====== MULAI DEBUG ======
+[2025-05-20 10:20:57] POST data: Array
+(
+)
+
+[2025-05-20 10:20:57] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:25:09] ====== MULAI DEBUG ======
+[2025-05-20 10:25:09] POST data: Array
+(
+)
+
+[2025-05-20 10:25:09] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:27:22] ====== MULAI DEBUG ======
+[2025-05-20 10:27:22] POST data: Array
+(
+)
+
+[2025-05-20 10:27:22] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 10:40:58] ====== MULAI DEBUG ======
+[2025-05-20 10:40:58] POST data: Array
+(
+)
+
+[2025-05-20 10:40:58] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 11:06:48] ====== MULAI DEBUG ======
+[2025-05-20 11:06:48] POST data: Array
+(
+)
+
+[2025-05-20 11:06:48] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+    [tables] => Array
+        (
+        )
+
+    [selected_db] => jpos_middleware
+)
+
+[2025-05-20 12:02:52] ====== MULAI DEBUG ======
+[2025-05-20 12:02:52] POST data: Array
+(
+)
+
+[2025-05-20 12:02:52] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 12:05:03] ====== MULAI DEBUG ======
+[2025-05-20 12:05:03] POST data: Array
+(
+)
+
+[2025-05-20 12:05:03] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 12:35:55] ====== MULAI DEBUG ======
+[2025-05-20 12:35:55] POST data: Array
+(
+)
+
+[2025-05-20 12:35:55] SESSION data: Array
+(
+    [user_id] => 2
+    [username] => guest
+    [full_name] => guest
+    [is_admin] => 
+    [error] => Anda tidak memiliki izin untuk mengakses halaman ini
+)
+
+[2025-05-20 12:37:40] ====== MULAI DEBUG ======
+[2025-05-20 12:37:40] POST data: Array
+(
+)
+
+[2025-05-20 12:37:40] SESSION data: Array
+(
+    [user_id] => 2
+    [username] => guest
+    [full_name] => guest
+    [is_admin] => 
+    [error] => Anda tidak memiliki izin untuk mengakses halaman ini
+)
+
+[2025-05-20 12:37:52] ====== MULAI DEBUG ======
+[2025-05-20 12:37:52] POST data: Array
+(
+)
+
+[2025-05-20 12:37:52] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 12:38:35] ====== MULAI DEBUG ======
+[2025-05-20 12:38:35] POST data: Array
+(
+)
+
+[2025-05-20 12:38:35] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 12:58:08] ====== MULAI DEBUG ======
+[2025-05-20 12:58:08] POST data: Array
+(
+)
+
+[2025-05-20 12:58:08] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+
+[2025-05-20 13:29:46] ====== MULAI DEBUG ======
+[2025-05-20 13:29:46] POST data: Array
+(
+)
+
+[2025-05-20 13:29:46] SESSION data: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [full_name] => Administrator
+    [is_admin] => 1
+)
+

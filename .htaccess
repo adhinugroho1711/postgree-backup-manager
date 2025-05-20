@@ -1,0 +1,32 @@
+RewriteEngine On
+
+# Jika file atau direktori yang diminta tidak ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Arahkan semua request ke index.php
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+
+# Nonaktifkan directory listing
+Options -Indexes
+
+# Atur default charset
+AddDefaultCharset UTF-8
+
+# Perlindungan file .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Blok akses ke file-file sensitif
+<FilesMatch "^\.|~$\.|^#.*#|^\..*~$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Blok akses ke direktori
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

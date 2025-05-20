@@ -1,0 +1,41 @@
+# File konfigurasi
+config/config.php
+config/database.php
+
+# File backup
+backups/*
+!backups/.gitkeep
+
+# File log
+logs/*
+!logs/.gitkeep
+logs/ajax/*
+!logs/ajax/.gitkeep
+logs/backup/*
+!logs/backup/.gitkeep
+logs/cron/*
+!logs/cron/.gitkeep
+logs/delete/*
+!logs/delete/.gitkeep
+logs/download/*
+!logs/download/.gitkeep
+logs/restore/*
+!logs/restore/.gitkeep
+
+# File sementara
+tmp/*
+!tmp/.gitkeep
+
+# File sistem
+.DS_Store
+Thumbs.db
+
+# File IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# File vendor jika menggunakan Composer
+vendor/
+composer.lock
