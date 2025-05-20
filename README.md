@@ -16,34 +16,34 @@ Aplikasi berbasis web untuk melakukan backup dan restore database PostgreSQL den
 ## Screenshot Aplikasi
 
 ### Halaman Login
-![Halaman Login](screenshots/login.png)
+![Halaman Login](screenshots_new/login.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots_new/dashboard.png)
 
 ### Halaman Backup
-![Halaman Backup](screenshots/backup.png)
+![Halaman Backup](screenshots_new/backup.png)
 
 ### Halaman Restore
-![Halaman Restore](screenshots/restore.png)
+![Halaman Restore](screenshots_new/restore.png)
 
 ### Halaman Kelola Backup
-![Halaman Kelola Backup](screenshots/kelola%20backup.png)
+![Halaman Kelola Backup](screenshots_new/kelola_backup.png)
 
 ### Halaman Jadwal Backup
-![Halaman Jadwal Backup](screenshots/jadwal%20backup.png)
+![Halaman Jadwal Backup](screenshots_new/jadwal_backup.png)
 
 ### Halaman Laporan
-![Halaman Laporan](screenshots/laporan.png)
+![Halaman Laporan](screenshots_new/laporan.png)
 
 ### Halaman Audit Log
-![Halaman Audit Log](screenshots/audit%20logs.png)
+![Halaman Audit Log](screenshots_new/audit_logs.png)
 
 ### Halaman Pengguna
-![Halaman Pengguna](screenshots/pengguna.png)
+![Halaman Pengguna](screenshots_new/pengguna.png)
 
 ### Halaman Pengaturan
-![Halaman Pengaturan](screenshots/pengaturan.png)
+![Halaman Pengaturan](screenshots_new/pengaturan.png)
 
 ## Persyaratan Sistem
 
